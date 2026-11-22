@@ -1,0 +1,6 @@
+@import "tailwindcss";
+body { @apply bg-slate-50 text-slate-800 antialiased; }
+.input { @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm focus:border-teal-700 focus:outline-none; }
+.btn { @apply rounded-md bg-teal-800 px-4 py-2 text-sm font-medium text-white hover:bg-teal-900 disabled:opacity-50; }
+.btn-sec { @apply rounded-md border border-slate-300 bg-white px-4 py-2 text-sm hover:bg-slate-100; }
+@media print { header, footer, .no-print { display: none !important; } body { background: white; } }
