@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
   try {
     const cliente = new Anthropic();
     const msg = await cliente.messages.create({
-      model: process.env.ANTHROPIC_MODEL ?? "claude-sonnet-5-5",
+      model: process.env.ANTHROPIC_MODEL ?? "claude-haiku-5-5",
       max_tokens: 1500,
       system: SISTEMA,
       messages: [{ role: "user", content: contenido }],
